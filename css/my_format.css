@@ -1,7 +1,119 @@
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .top-bar{
     background-color: #161616;
-    height: 20px;
+    height: 10%;
     width: 100%;
     margin: 0;
     padding: 0;
 }
+
+.social-link{
+    display: flex;
+    padding: 1% 0;
+    margin: 0;
+}
+
+.social-link img{
+    width: 30px;
+    height: 30px;
+    padding: 0 1%;
+    margin: 0;
+}
+
+.social-link p{
+    color: rgba(255, 255, 255, 0.689);
+    font-size: 16px;
+    margin: 0;
+    padding-top: 0.5%;
+}
+
+.social-link a{
+    color: #79fd51b8;
+    text-decoration: none;
+}
+.social-link a:hover{
+    color: #72ff47;
+}
+
+header{
+    display: flex;
+    align-items:flex-start;
+    background-color: rgb(62, 144, 81);
+    padding: 3% 5%;
+    text-align: left;
+}
+
+header img{
+    border-radius: 180px;
+    width: 260px;
+}
+
+header h1{
+    color: white;
+    font-size: 50px;
+    margin: 1% 0;
+}
+
+header h2{
+    color: rgba(255, 255, 255, 0.615);
+    font-size: 30px;
+    margin-top: 0;
+    /*padding-left: 6%;*/
+}
+
+body{
+    background-color: rgb(181, 226, 163);
+    margin: 0;
+    align-items: center;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+main{
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0 20px; /*(all) or (top/bottom left/rigtht) or (top bottom rigth left)*/
+    
+}
+
+main img{
+    /*max-width: 100%;*/
+    width: 100px;
+    padding: 20px;
+}
+
+h1, h2{
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main h2{
+    font-size: 50px;
+    background: #949494;
+    color: aliceblue;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(62, 144, 81);
+    color: white;
+    padding: 5%;
+}
+
+footer p{
+    margin: 0;
+}
+
+
+/*
+To create caption for image: go to first lesson, chapter 10, 21:50*/
