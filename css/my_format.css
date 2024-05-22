@@ -5,34 +5,49 @@
     --ligth-blue:     #2de1fc;
     --ligth-green:    #2AFC98;
     --green:          #09E85E;
-    --grey-hreen:     #16C172;
+    --mid-green:     #16C172;
     --dark-green:     #214F4B;
     --ligth-grey:     #F5F5F5;
 }
 
-/*.silkscreen-regular {
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+h1{
+    font-size: 70px;
+    margin: 0 0;
+    padding-top: 1%;
 }
 
-.silkscreen-bold {
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}*/
-
-/*.top-bar{
-    background-color: #161616;
-    height: 10%;
-    width: 100%;
+h2{
+    font-size: 30px;
     margin: 0;
-    padding: 0;
-}*/
+    transform: translateY(-10px);
+}
+
+.top-banner{
+    background-color: var(--dark-green);
+    height: 100vh;
+    padding: 50px, 20px;
+    box-sizing: border-box;
+}
+
+.top-banner h1, h2{
+    color: var(--ligth-green);
+}
+
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    padding: 2% 0 0;
+}
+
+.profile-picture img{
+    border-radius: 180px;
+    width: 260px;
+    position: absolute; top: 12%; left: 65%;
+}
 
 .social-link{
     display: flex;
-    padding: 1% 0;
+    padding: 0.5% 0;
     margin: 0;
 }
 
@@ -44,14 +59,14 @@
 }
 
 .social-link p{
-    color: rgba(255, 255, 255, 0.689);
+    color: var(--mid-green);
     font-size: 16px;
     margin: 0;
     padding-top: 0.5%;
 }
 
 .social-link a{
-    color: #79fd51b8;
+    color: var(--mid-green);
     text-decoration: none;
 }
 .social-link a:hover{
@@ -62,11 +77,16 @@ body{
     background-color: var(--ligth-grey);
     padding: 0;
     margin: 0;
-    font-family: "VT323", "Silkscreen", 'Times New Roman', serif;
+    font-family: "VT323";
+    /*font-family: "VT323", "Silkscreen", 'Times New Roman', serif;*/
+}
+
+.section h2{
+    color: var(--dark-green);
 }
 
 footer{
-    background-color: rgb(62, 144, 81);
+    background-color: var(--dark-green);
     color: white;
     padding: 5%;
 }
@@ -75,66 +95,13 @@ footer p{
     margin: 0;
 }
 
-.profile-picture img{
-    border-radius: 180px;
-    width: 260px;
+.popup{
+    display: none;
 }
-
-/*.center-block{
-    display: block;
-    margin: 0 auto;
-}
-
-header{
-    display: flex;
-    align-items:flex-start;
-    background-color: rgb(62, 144, 81);
-    padding: 3% 1%;
-}
-
-header img{
-    border-radius: 180px;
-    width: 260px;
-    
-}
-
-header h1{
-    color: white;
-    font-size: 50px;
-}
-
-header h2{
-    color: rgba(255, 255, 255, 0.615);
-    font-size: 30px;
-}*/
-
-
-/*main{
-    max-width: 1900px;
-    margin: 0 auto;
-    padding: 0 20px;
-    
-}
-
-main img{
-    width: 100px;
-}
-
-h1, h2{
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-main h2{
-    font-size: 50px;
-    background: #949494;
-    color: aliceblue;
-    text-align: center;
-}*/
-
 
 /*
-To create caption for image: go to first lesson, chapter 10, 21:50
+To create button css: go to second lesson, chapter 20, ~13:00
+
 
 color palette:
 azul-saturado:  2DE1FC
