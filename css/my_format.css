@@ -1,4 +1,16 @@
-.silkscreen-regular {
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+:root{
+    --ligth-blue:     #2de1fc;
+    --ligth-green:    #2AFC98;
+    --green:          #09E85E;
+    --grey-hreen:     #16C172;
+    --dark-green:     #214F4B;
+    --ligth-grey:     #F5F5F5;
+}
+
+/*.silkscreen-regular {
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -8,15 +20,15 @@
     font-family: "Silkscreen", sans-serif;
     font-weight: 700;
     font-style: normal;
-}
+}*/
 
-.top-bar{
+/*.top-bar{
     background-color: #161616;
     height: 10%;
     width: 100%;
     margin: 0;
     padding: 0;
-}
+}*/
 
 .social-link{
     display: flex;
@@ -46,62 +58,11 @@
     color: #72ff47;
 }
 
-header{
-    display: flex;
-    align-items:flex-start;
-    background-color: rgb(62, 144, 81);
-    padding: 3% 5%;
-    text-align: left;
-}
-
-header img{
-    border-radius: 180px;
-    width: 260px;
-}
-
-header h1{
-    color: white;
-    font-size: 50px;
-    margin: 1% 0;
-}
-
-header h2{
-    color: rgba(255, 255, 255, 0.615);
-    font-size: 30px;
-    margin-top: 0;
-    /*padding-left: 6%;*/
-}
-
 body{
-    background-color: rgb(181, 226, 163);
+    background-color: var(--ligth-grey);
+    padding: 0;
     margin: 0;
-    align-items: center;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-}
-
-main{
-    max-width: 1900px;
-    margin: 0 auto;
-    padding: 0 20px; /*(all) or (top/bottom left/rigtht) or (top bottom rigth left)*/
-    
-}
-
-main img{
-    /*max-width: 100%;*/
-    width: 100px;
-    padding: 20px;
-}
-
-h1, h2{
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-main h2{
-    font-size: 50px;
-    background: #949494;
-    color: aliceblue;
-    text-align: center;
+    font-family: "VT323", "Silkscreen", 'Times New Roman', serif;
 }
 
 footer{
@@ -114,6 +75,81 @@ footer p{
     margin: 0;
 }
 
+.profile-picture img{
+    border-radius: 180px;
+    width: 260px;
+}
+
+/*.center-block{
+    display: block;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items:flex-start;
+    background-color: rgb(62, 144, 81);
+    padding: 3% 1%;
+}
+
+header img{
+    border-radius: 180px;
+    width: 260px;
+    
+}
+
+header h1{
+    color: white;
+    font-size: 50px;
+}
+
+header h2{
+    color: rgba(255, 255, 255, 0.615);
+    font-size: 30px;
+}*/
+
+
+/*main{
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+main img{
+    width: 100px;
+}
+
+h1, h2{
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main h2{
+    font-size: 50px;
+    background: #949494;
+    color: aliceblue;
+    text-align: center;
+}*/
+
 
 /*
-To create caption for image: go to first lesson, chapter 10, 21:50*/
+To create caption for image: go to first lesson, chapter 10, 21:50
+
+color palette:
+azul-saturado:  2DE1FC
+ligth-green:    2AFC98
+green:          09E85E
+grey-hreen:     16C172
+dark-green:     214F4B
+ligth-grey:     F5F5F5
+
+
+
+
+
+
+
+
+
+*/
