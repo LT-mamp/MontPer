@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Aldrich&family=Black+Han+Sans&display=swap');
 
 :root{
     --ligth-blue:     #2de1fc;
@@ -27,6 +28,7 @@ body{
     background-color: #214F4B;
     width: 340px;
     padding: 20px;
+    filter: drop-shadow(10px 0px 10px rgba(0, 0, 0, 0.25));
 }
 
 .profile-box{
@@ -108,4 +110,167 @@ body{
 }
 .social-link a:hover{
     color: #72ff47;
+}
+
+/*
+--------------------------------------------------------------
+*/
+
+.main-box{
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+.top-bar{
+    background-color: white;
+    height: 60px;
+    padding: 20px 20px 10px;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));  /*x, y, diffuse, color*/
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+a.sc-button{
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "Aldrich";
+    text-decoration: none;
+    color: var(--dark-green);
+    background-color: white;
+    padding: 12px 20px;
+}
+
+a.sc-button:hover{
+    background-color: #16c171;
+    border-radius: 14px;
+}
+
+.button-separator{
+    height: 30px;
+    width: 2px;
+    margin: auto 20px;
+    background-color: var(--dark-green);
+}
+.shortcuts{
+    display: flex;
+}
+
+.contact-button{
+    margin-left: auto;
+}
+
+.contact-button a{
+    color: black;
+    background-color: var(--ligth-blue);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "Aldrich";
+    text-decoration: none;
+    padding: 12px 30px;
+}
+
+.contact-button a:hover{
+    background-color: #3ba6d4;
+    color: rgba(0, 0, 0, 0.718);
+}
+
+
+/*
+--------------------------------------------------------------
+*/
+
+.section {
+    background-color: white;
+    width: 80%;
+    margin: 30px auto 50px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25)); 
+}
+
+.section-head{
+    background-color: var(--ligth-green);
+    height: 180px;
+    display: flex;
+    overflow: hidden;
+}
+
+.section-head h1{
+    margin: 0;
+    padding: 70px 0 0 40px;
+    font-family: "Black Han Sans";
+    font-size: 40px;
+    color: white;
+}
+
+.sh-decor{
+    background-color: var(--mid-green);
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    transform: translateX(70px) translateY(40px) rotate(-30deg);
+}
+
+.section-content{
+    margin: 50px 0;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-card{
+    background-color: #9cd4a5;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section-card img{
+    border-radius: 100%;
+    width: 140px;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+}
+
+.s-tags{
+    display: flex;
+}
+
+.section-tag{
+    background-color: var(--green);
+    margin: 20px 10px;
+    padding: 5px 10px;
+    border-radius: 20%;
+}
+
+/*
+------------------------------------------------------------------
+*/
+
+.goup-box{
+    position: fixed;
+    right: 20px;
+    top: 100vh;
+}
+
+.goup-button{
+    width: 100px;
+    height: 100px;
+    background-color: var(--mid-green);
+    border-radius: 100%;
+    position: sticky;
+    top: 80vh;
+    right: 20px;
+}
+
+.info-popup{
+    display: none;
 }

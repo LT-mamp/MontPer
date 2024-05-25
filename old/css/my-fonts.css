@@ -21,3 +21,14 @@ HTML code:
     font-weight: 400;
     font-style: normal;
 }
+
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Aldrich&family=Black+Han+Sans&display=swap" rel="stylesheet">
+*/
+.black-han-sans-regular {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
