@@ -272,5 +272,118 @@ a.sc-button:hover{
 }
 
 .info-popup{
-    display: none;
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.info-popup .blanket{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.info-popup .content{
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -300px;
+}
+
+.info-popup .side{
+    width: 300px;
+}
+
+.info-popup .side-background{
+    background-color: var(--dark-green);
+    width: 200px;
+    height: 100%;
+    margin: 0;
+}
+
+.info-popup .picture{
+    background-color: var(--dark-green);
+    border-radius: 150px;
+    margin: 77px 0 77px 20px;
+    padding: 30px 15px;
+    position: absolute;
+    width: 270px;
+    height: 400;
+    box-sizing: border-box;
+}
+
+.info-popup .picture img{
+    border-radius: 180px;
+    width: 200;
+    margin: 0 auto;
+    display: block;
+}
+
+.info-popup .picture h1, h3{
+    margin: 0 5%;
+    color: #F5F5F5;
+    font-family: "Alatsi", Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin: 0 auto;
+}
+
+.info-popup .picture h3{
+    font-size: 15px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.info-popup .info{
+    margin: 50px 10px;
+    width: 550px;
+}
+
+.info-popup .info h2{
+    font-size: 32;
+    font-family: "Alatsi";
+    color: var(--dark-green);
+}
+
+.info-popup .links-box{
+    margin-top: 20px;
+}
+
+.info-popup .social-link{
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.info-popup .cv{
+    margin-top: 40px;
+}
+
+.info-popup .close-button{
+    width: 100px;
+    height: 100px;
+    /*background-color: var(--dark-green);*/
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.info-popup .close-button p{
+    font-size: 50px;
+    line-height: 0;
+    font-weight: lighter;
+    color: black;
 }
