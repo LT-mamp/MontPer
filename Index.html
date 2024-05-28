@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +7,32 @@
     <link rel="stylesheet" href="css/format.css">
     <link rel="icon" href="img/perfil_wa1.png">
 </head>
+
+
+<header>
+    <div class="top-bar">
+        <div class="open-profile-button">
+            <!-- para abrir profile box (y si está abierta: desaparece) -->
+        </div>
+        <div class="shortcuts">
+            <!-- 3 botones -->
+            <a class="sc-button" href="#s1">Habilidades</a>
+            <div class="button-separator"></div>
+            <a class="sc-button" href="#s2">Estudios</a>
+            <div class="button-separator"></div>
+            <a class="sc-button" href="#s3">Experiencia</a>
+        </div>
+        <div class="contact-button">
+            <!-- 1 botón -->
+            <a class="info-button" href="javascript:()" onclick="showPopup();">Contactar</a>
+        </div>
+    </div>
+</header>
+
+
 <body>
     <div class="side-box">
+        <div class="close-button"><p>x</p></div>
         <div class="profile-box">
             <img src="img/IMG_01.jpg" alt="Profile picture">
             <h1>M. Alicia Montoya Peramo</h1>
@@ -49,25 +74,9 @@
             </div>
         </div>
     </div>
+
     <div class="main-box">
-        <div class="top-bar">
-            <div class="open-profile-button">
-                <!-- para abrir profile box (y si está abierta: desaparece) -->
-            </div>
-            <div class="shortcuts">
-                <!-- 3 botones -->
-                <a class="sc-button" href="#s1">Habilidades</a>
-                <div class="button-separator"></div>
-                <a class="sc-button" href="#s2">Estudios</a>
-                <div class="button-separator"></div>
-                <a class="sc-button" href="#s3">Experiencia</a>
-            </div>
-            <div class="contact-button">
-                <!-- 1 botón -->
-                <a class="info-button" href="javascript:()" onclick="showPopup();">Contactar</a>
-            </div>
-        </div>
-        <div id="s1"></div>
+        <div class="marker" id="s1"></div>
         <div class="section">
             <div class="section-head">
                 <h1>Habilidades</h1>
@@ -81,7 +90,7 @@
                         <div class="section-tag"><p>Unity</p></div>
                         <div class="section-tag"><p>...</p></div>
                     </div>
-                    <p>Esto es un pequeño resúmen de lo que va en la card</p>
+                    <p>Esto es un pequeño resúmen de lo que va en la card y tengo que poner contenido de diferente tamaño para ver si realmente funciona bien</p>
                     <!-- 1 botón para más info? -->
                 </div>
                 <div class="section-card">
@@ -91,7 +100,7 @@
                         <div class="section-tag"><p>Unity</p></div>
                         <div class="section-tag"><p>...</p></div>
                     </div>
-                    <p>Esto es un pequeño resúmen de lo que va en la card</p>
+                    <p>Esto es un pequeño resúmen</p>
                     <!-- 1 botón para más info? -->
                 </div>
                 <div class="section-card">
@@ -126,7 +135,7 @@
                 </div>
             </div>
         </div>
-        <div id="s2"></div>
+        <div class="marker" id="s2"></div>
         <div class="section">
             <div class="section-head">
                 <h1>Estudios</h1>
@@ -151,7 +160,7 @@
                 </div>
             </div>
         </div>
-        <div id="s3"></div>
+        <div class="marker" id="s3"></div>
         <div class="section">
             <div class="section-head">
                 <h1>Experiencia</h1>
@@ -212,7 +221,9 @@
         </div>
         <div class="goup-box"><div class="goup-button"><p>^</p></div></div>
         <div class="bottom-footer"></div>
-        <div class="info-popup">
+        
+        
+        <div class="info-popup" id="popup">
             <div class="blanket">
                 <div class="content">
                     <div class="side">
@@ -249,14 +260,14 @@
                                     <img src="https://flyclipart.com/thumb2/link-icon-172190.png">
                                     <p><a href="#">CV_MontoyaPeramo_ESP</a></p>
                                 </div>
-                                <div class="social-link">
+                                <div class="social-link end-link">
                                     <img src="https://flyclipart.com/thumb2/link-icon-172190.png">
                                     <p><a href="#">CV_MontoyaPeramo_ENG</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="close-button">
+                    <div class="close-button" onclick="hidePopup();">
                         <p>x</p>
                     </div>
                 </div>
@@ -266,4 +277,10 @@
 
     <script src="script.js" type="text/javascript"></script>
 </body>
+
+<footer>
+
+</footer>
+
+
 </html>
